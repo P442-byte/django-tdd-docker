@@ -6,7 +6,6 @@ from rest_framework.views import APIView
 from .models import Movie
 from .serializers import MovieSerializer
 
-
 class MovieList(APIView):
     def get(self, request, format=None):
         movies = Movie.objects.all()
